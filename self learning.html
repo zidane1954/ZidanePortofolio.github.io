@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="id">
+	<head>
+		<title>Self Learning - Zidane Portofolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Komponen halaman Learning - menyatu dengan tema Forty */
+			.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17em, 1fr)); gap: 1.5em; margin: 2em 0 0 0; }
+			.card { border: 1px solid rgba(255,255,255,0.18); border-radius: 0.75em; padding: 1.75em 1.5em; background: rgba(255,255,255,0.03); display: flex; flex-direction: column; }
+			.card-icon { display: inline-flex; align-items: center; justify-content: center; width: 3.5em; height: 3.5em; border-radius: 50%; background: rgba(155,241,255,0.18); color: #9bf1ff; font-size: 1.3em; margin-bottom: 0.8em; border-bottom: 0; align-self: flex-start; }
+			.card-icon:before { line-height: 1; }
+			.card h3 { margin: 0 0 0.2em 0; }
+			.card .meta { font-size: 0.85em; opacity: 0.7; margin: 0 0 0.9em 0; }
+			.card p { font-size: 0.9em; opacity: 0.85; margin: 0 0 1em 0; }
+			.card .more { margin-top: auto; font-size: 0.85em; border-bottom: 0; color: #9bf1ff; }
+			.chips { list-style: none; padding: 0; margin: 0 0 1em 0; display: flex; flex-wrap: wrap; gap: 0.5em; }
+			.chips li { padding: 0.15em 0.75em; border: 1px solid rgba(255,255,255,0.3); border-radius: 2em; font-size: 0.75em; margin: 0; }
+			.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9em, 1fr)); gap: 1em; margin-top: 2em; text-align: center; }
+			.stats div { border: 1px solid rgba(255,255,255,0.18); border-radius: 0.75em; padding: 1.2em 0.5em; }
+			.stats strong { display: block; font-size: 2em; color: #9bf1ff; line-height: 1.1; }
+			.stats span { font-size: 0.8em; opacity: 0.75; }
+			.roadmap { list-style: none; padding: 0; margin: 2em 0 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6em; }
+			.roadmap li { margin: 0; padding: 0.5em 1.1em; border-radius: 2em; background: rgba(155,241,255,0.15); border: 1px solid rgba(155,241,255,0.4); font-size: 0.9em; }
+			.roadmap li.arrow { background: none; border: 0; padding: 0; opacity: 0.6; }
+			.post { display: grid; grid-template-columns: 8em 1fr; gap: 1.5em; padding: 2em 0; border-top: 1px solid rgba(255,255,255,0.18); }
+			.post .date { font-size: 0.85em; opacity: 0.7; line-height: 1.5; }
+			.post .date strong { display: block; font-size: 2.2em; color: #9bf1ff; line-height: 1; }
+			.post h3 { margin: 0 0 0.4em 0; }
+			.post p { margin: 0 0 1em 0; opacity: 0.85; }
+			.post.featured { border: 1px solid rgba(155,241,255,0.4); border-radius: 0.75em; padding: 2em; background: rgba(155,241,255,0.05); margin-bottom: 1em; }
+			.post .read { font-size: 0.85em; opacity: 0.6; margin-left: 0.5em; }
+			@media screen and (max-width: 736px) { .post { grid-template-columns: 1fr; gap: 0.5em; } .post .date strong { display: inline; font-size: 1.4em; margin-right: 0.3em; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Zidane</strong> <span>Portofolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li><a href="learning.html">Continuous Learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Self-Learning Journey</h1>
+							</header>
+							<div class="content">
+								<p>A PERSONAL JOURNEY OF LEARNING DATA ANALYTICS FROM SCRATCH.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<section id="one">
+							<div class="inner">
+								<header class="major"><h2>My Learning Roadmap</h2></header>
+								<p>Starting with the basics, I gradually developed my data analytics skills through self-directed learning, hands-on practice, and real-world projects.</p>
+								<ul class="roadmap">
+									<li>SQL</li><li class="arrow">&rarr;</li><li>Excel</li><li class="arrow">&rarr;</li><li>Python</li><li class="arrow">&rarr;</li><li>Data Visualization</li><li class="arrow">&rarr;</li><li>Projects</li>
+								</ul>
+							</div>
+						</section>
+
+						<section id="two">
+							<div class="inner">
+								<header class="major"><h2>Thinking Like a Detective: My Journey into Data Analytics </h2></header>
+								<p>
+									Hi, I'm Zidane, a 2026 Mathematics graduate from Universitas Gadjah Mada (UGM), Indonesia.
+									It all began when I entered my ninth semester and found myself waiting for my thesis defense. During that period, I started to realize that life was about to get a little more serious. Or, to put it in a way that feels more relatable, I felt as though the tutorial phase of a game had ended. Now, it was time to start the actual game, face new challenges, and put the knowledge and experience I had gathered throughout university to the test.<br>
+									<br>
+									But before starting this new game, a question came to mind: What do I want to become after graduation, and what can I do with everything I have learned so far? <br>
+									<br>
+									That question led me to explore career opportunities related to my academic background in Mathematics. There were many paths I could take, but one field gradually caught my attention: data analytics. <br>
+									When people talk about data, statistics is often one of the first fields that comes to mind. This is particularly interesting to me because, although Mathematics and Statistics are closely related, they have not always felt the same from my perspective as a student.<br>
+									<br>
+									Fun fact: I was never particularly comfortable with statistics at first. Compared with other areas of Mathematics, which I found more structured and straightforward in their reasoning, statistics felt less intuitive to me. Nevertheless, I continued to study it as an essential part of my academic journey.<br>
+									<br>
+									It might sound contradictory: how could someone who was not particularly fond of statistics become interested in pursuing a career in data? <br>
+									<br>
+									I began to find the answer when I looked at the world of data from a different perspective. I realized that working with data is not just about numbers, formulas, or statistical calculations. There is another aspect that genuinely fascinates me: using available information to investigate problems, uncover patterns, and develop well-reasoned conclusions.<br>
+									<br>
+									That process reminded me of something I had always enjoyed: the way a detective thinks. <br>
+									<br>
+									</p>
+
+										<span class="image main">
+											<img src="images/self learn/detektif_2.jpg" alt="A detective examining clues on an evidence board" />
+										</span>
+
+									<p>
+									Imagine a detective investigating a case. They cannot simply decide who is guilty based on an initial suspicion. Instead, they must observe the situation, gather evidence, connect the clues, develop hypotheses, and test them before reaching a conclusion.
+									Every clue may carry meaning, but not every clue necessarily points toward the same answer. A detective must therefore think critically, consider different possibilities, and ensure that their conclusions are supported by evidence.<br>
+									<br>
+									To me, this process has a lot in common with the work of a Data Analyst.<br>
+									It all starts with a question. When a business experiences declining sales, for example, a Data Analyst should not immediately assume they know the cause. They need to understand the problem, identify the information required, and determine which aspects deserve further investigation. Just as a detective examines a situation before drawing conclusions, a Data Analyst needs to understand the context before deciding how to approach an analysis.
+									The next step is to gather and examine the evidence. While a detective might collect recordings, witness statements, and physical evidence, a Data Analyst works with information from databases, spreadsheets, and other data sources. However, having a large amount of data is not enough. Its quality and relevance must also be assessed before it can be used reliably. This is where data cleaning and preparation become important, from handling missing values to standardizing formats and identifying duplicate records.<br>
+									<br>
+									Once the data is ready, the investigation continues by looking for patterns and developing hypotheses. A Data Analyst may explore the data to identify trends, compare groups, or examine relationships between variables. These patterns can provide clues that help explain a problem. However, just as in an investigation, a clue is not necessarily the final answer. A relationship found in the data does not automatically prove a cause-and-effect relationship.
+									That is why initial assumptions need to be examined further using methods appropriate to the problem. The results must then be interpreted in light of the available evidence and the limitations of the data. The goal is not simply to confirm an initial assumption, but to develop a better understanding of the problem at hand.<br>
+									<br>
+									Ultimately, the findings need to be translated into conclusions that can guide the next steps. In a business context, for instance, an analysis might reveal that declining sales are associated with frequent stockouts. Such a finding could provide a basis for reviewing inventory planning, provided that the conclusions and recommendations are consistent with the strength of the available evidence.<br>
+									<br>
+									This is where I began to see the appeal of working with data. I discovered that data analytics is not merely about processing numbers. It is also about asking the right questions, investigating possibilities, and building an understanding based on evidence.
+									I enjoy this process because it gives me room to keep asking questions and exploring possibilities. Over time, that curiosity developed into a desire to pursue a career in data analytics.<br>
+									<br>
+									But once I had found a direction I wanted to pursue, another question emerged: Where should I begin?<br>
+									For me, getting started with something new can be challenging. There are so many things to learn, and it is not always clear where to begin or how to structure the learning process. However, I realized that something will continue to feel difficult if I never take the first step. So, I decided to start by making use of the learning resources available online, from educational websites to YouTube tutorials.
+									The first skill I began studying more systematically was SQL (Structured Query Language), a language used to retrieve and manage data in relational databases.<br>
+									<br>
+									I started with W3Schools, which provides introductory SQL tutorials. There, I learned how to retrieve and filter data, use aggregate functions, combine tables with JOIN, and group records using GROUP BY. These concepts became the foundation for understanding how data is stored and queried in databases.
+									Once I felt comfortable with the basics, I wanted to move beyond theory and put what I had learned into practice. I began searching for tutorials on YouTube and discovered Alex The Analyst, a channel that offers learning resources covering many of the skills commonly used in data analytics.<br>
+									<br>
+									Following the tutorials, I started practicing SQL with MySQL. I learned to apply the concepts I had studied to data preparation tasks, such as standardizing formats, removing duplicates, and handling missing values. Through this process, I began to understand that learning syntax alone was not enough. I also needed to know how and when to apply a particular technique to solve a data-related problem. To test my understanding, I then worked through SQL exercises on HackerRank. These exercises gave me an opportunity to apply what I had learned to different problems while identifying areas where I still needed to improve. <br>
+									<br>
+									As I built my SQL foundation, I realized that a Data Analyst's work involves much more than retrieving data from a database. There are other important stages to understand, from preparing the data to presenting the results. This realization encouraged me to expand my skills and explore additional tools.
+									One of the next tools I explored was Microsoft Excel. Through Alex The Analyst's tutorials, I became familiar with various Excel features that support data preparation and analysis, including formulas, conditional formatting, PivotTables, and charts. I began to see Excel as more than a tool for organizing information in tables. It could also help me explore data, identify patterns, and communicate findings more effectively.<br>
+									<br>
+									Next, I continued developing my Python skills. Thanks to practical coursework during university, I already had some foundational experience with NumPy and Matplotlib. I revisited these libraries to deepen my understanding and began learning Pandas to support data preparation tasks, such as standardizing formats, removing duplicates, and handling missing values. For me, learning Python was an opportunity to extend the skills I had developed at university into a context more closely related to data analytics. My Mathematics background had trained me to approach problems systematically, while self-directed learning gave me the opportunity to apply that way of thinking using different tools.<br>
+									<br>
+									As my understanding of data preparation grew, I also realized something important: good analysis needs to be communicated clearly. Discovering a pattern is not enough if the results are difficult for others to understand. Data needs to be presented in a way that allows people to interpret the information and use it to support their decisions. This realization led me to explore data visualization and dashboard development using Tableau, Microsoft Power BI, and Google Looker Studio. I started with Tableau, moved on to Power BI, and then explored Looker Studio. Along the way, I learned how to present key metrics using cards, compare values with bar charts, track changes over time with line charts, and use slicers and drill-down features to make dashboards more interactive.<br>
+									<br>
+									As I experimented with these three platforms, I noticed that many visualization and dashboard design principles could be applied across different tools, even though each platform has its own features and strengths. Personally, I found myself gravitating toward Power BI because its integration with Power Query allows me to clean and transform data before using it in visualizations. Through this process, I began to see data analytics as a series of interconnected steps: understanding a problem, preparing the data, exploring the information, and presenting the findings in a way that others can understand. Each tool plays a different role in supporting that process. Still, I did not want to stop at studying concepts and following tutorials. I wanted to see how far I could apply my skills when faced with actual analytical problems. That was when I began working on independent portfolio projects.<br>
+									<br>
+									My first portfolio project focused on sales data from an online toy retailer, Maven Fuzzy Factory. Through this project, I began applying the skills I had learned to explore sales data and understand what insights could be drawn from it. It gave me an opportunity to connect data preparation and analysis with the process of finding information that could support business decisions. After that, I moved on to a second project focused on warehouse inventory and logistics. This project introduced me to a different type of problem: understanding how inventory data can be processed and presented to make stock conditions easier to monitor. Through dashboard development, inventory information could be organized more clearly, helping users identify situations that may require attention.<br>
+									<br>
+									These two projects became important parts of my learning journey, allowing me to connect technical skills with more concrete problems. I began to understand that the purpose of learning different tools is not simply to master their features, but to discover how they can help answer questions and communicate meaningful information.<br>
+									To explore the analysis, visualizations, and findings in more detail, feel free to visit the Projects section of my portfolio.<br>
+									<br>
+									Even after everything I have learned and the projects I have completed so far, my curiosity has not come to an end. In fact, every new concept I learn opens the door to more questions, perspectives, and possibilities to explore. I have come to realize just how vast the world of data is. There are still many methods to understand, patterns to uncover, and problems to investigate.<br>
+									<br>
+									For me, pursuing a career as a Data Analyst is not simply about mastering tools or completing projects. More importantly, it is about maintaining a sense of curiosity, questioning what appears on the surface, and continuing to dig deeper to develop a better understanding of the information available.
+									I want to keep expanding my knowledge, strengthening my analytical skills, and exploring different ways to turn data into meaningful insights. I know that my current skills still have room to grow, and I see that not as a limitation, but as an opportunity to keep improving.
+									If I was initially drawn to data because I recognized its similarities to the way a detective thinks, I now see my learning journey as an investigation that is still unfolding. There will always be something new to question, learn, and understand.<br>
+									<br>
+									Because to me, every answer is not the end of the search, but the beginning of a new question.
+
+								</p>
+								
+							</div>
+						</section>
+
+						<section id="three">
+							<div class="inner">
+								<header class="major"><h2>Fueling the Data Journey: Favorite Learning Hubs</h2></header>
+								<div class="card-grid">
+									<div class="card">
+										<span class="card-icon icon solid fa-globe"></span>
+										<h3>My Favorite Learning Source</h3>
+										<h4>W3schools</h4>
+										<p>This platform provides structured introductory SQL tutorials. Learning the fundamentals, such as retrieving and filtering data, using aggregate functions, joining tables with JOIN, and grouping data with GROUP BY, helped me build a solid foundation in understanding databases.</p>
+										<ul class="chips"><li>Web</li><li>SQL</li></ul>
+										<a href="https://www.w3schools.com/" class="more"> Check it out  &rarr;</a>
+									</div>
+									<div class="card">
+										<span class="card-icon icon solid fa-play-circle"></span>
+										<h3>My Favorite Youtube Channel</h3>
+										<h4>Alex The Analyst</h4>
+										<p>
+											Through Alex The Analyst YouTube channel, I learned SQL, Excel, Python, and data visualization through practical tutorials. I practiced data cleaning, analysis, and dashboard creation using tools like MySQL, Pandas, Power BI, Tableau, and Looker Studio. I highly recommend this channel for aspiring Data Analysts seeking beginner-friendly tutorials and hands-on projects.
+										</p>
+										<ul class="chips"><li>SQL</li><li>Excel</li><li>Python</li><li>Visualization</li></ul>
+										<a href="https://www.youtube.com/@AlexTheAnalyst" class="more"> Check it out  &rarr;</a>
+									</div>
+									<div class="card">
+										<span class="card-icon icon solid fa-laptop-code"></span>
+										<h3>My Favorite Practice Platform</h3>
+										<h4>HackerRank</4>
+										<p>I practiced solving SQL challenges on HackerRank to test and improve my problem-solving skills. These exercises helped me apply SQL concepts, write queries to solve different problems, and improve my logical thinking when working with data.</p>
+										<ul class="chips"><li>Practice</li><li>SQL</li></ul>
+										<a href="https://www.hackerrank.com/" class="more"> Check it out  &rarr;</a>
+									</div>
+								</div>
+								<ul class="actions" style="margin-top:2em">
+									<li><a href="index.html" class="button">Home</a></li>
+									<li><a href="project.html" class="button next">Discover My Project</a></li>
+								</ul>
+							</div>
+						</section>
+
+					</div>
+
+				<!-- Contact: personal info + social links -->
+					<section id="contact">
+						<div class="inner">
+							<section class="pf-card">
+								<h3>Muhammad Zidane</h3>
+								<p class="pf-role">Aspiring Data Analyst | Mathematics Graduate</p>
+								<p>Hi! I'm passionate about exploring data, uncovering meaningful insights, and turning complex information into clear visualizations that support better decisions. I'm always eager to learn, take on new challenges, and grow through hands-on experiences. I'd love to connect, exchange ideas, and explore opportunities to collaborate!</p>
+								<ul class="icons">
+									<!-- TODO: replace each # (and the email) with your real profile links -->
+									<li><a href="mailto:mzidane1954@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.instagram.com/zi.zidane_" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/zidane1954" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://wa.me/+6289648598174" target="_blank" rel="noopener" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<!-- TODO: replace with your real email -->
+										<a href="mailto:mzidane1954@gmail.com"> mzidane1954@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-linkedin-in"></span>
+										<h3>LinkedIn</h3>
+										<!-- TODO: replace with your LinkedIn URL -->
+										<a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener">muhammadzidane1954</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<!-- TODO: replace with your real number -->
+										<a href="https://wa.me/+6289648598174">+62 896-4859-8174</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Muhammad Zidane</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

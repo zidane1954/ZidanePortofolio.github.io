@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Zidane Portofolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Banner intro */
+			.bn-eyebrow { font-size: .75em; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; opacity: .8; margin: 0 0 1em 0; }
+
+			/* Featured projects slider */
+			#projects { padding: 4.5em 0 3.5em; }
+			.pp-slider { margin-top: 2.5em; }
+			.pp-track { display: flex; gap: 1.5em; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+			.pp-track::-webkit-scrollbar { display: none; }
+			a.pp-card { flex: 0 0 min(50em, 85%); justify-content: center; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; min-height: 16em; padding: 2.25em; border-radius: 6px; color: #fff; border-bottom: 0; text-decoration: none; transition: transform .25s ease, box-shadow .25s ease; }
+			a.pp-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,.35); color: #fff; }
+			.pp-warehouse { background: linear-gradient(135deg, #3b4a8f 0%, #6a7fd6 100%); }
+			.pp-maven { background: linear-gradient(135deg, #d9776f 0%, #e5a96b 100%); }
+			.pp-tag { font-size: .7em; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; opacity: .85; margin-bottom: 1em; }
+			a.pp-card h3 { margin: 0 0 .5em 0; }
+			a.pp-card p { margin-bottom: 0; max-width: 38em; }
+			.pp-cta { margin-top: 1.5em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .8em; }
+			.pp-controls { display: flex; align-items: center; justify-content: flex-end; gap: .75em; margin-top: 1.5em; }
+			.pp-btn { width: 2.75em; height: 2.75em; border-radius: 50%; border: 2px solid rgba(255,255,255,.6); background: transparent; color: #fff; cursor: pointer; line-height: 1; padding: 0; font-size: 1.1em; box-shadow: none; }
+			.pp-btn:hover { background: rgba(255,255,255,.15); }
+			.pp-btn:disabled { opacity: .3; cursor: default; }
+
+			/* About card */
+			.pf-card { display: flex; flex-direction: column; }
+			.pf-card .icons { margin-top: auto; margin-bottom: 0; }
+			.pf-card h3 { margin-bottom: .1em; }
+			.pf-card .pf-role { font-weight: 600; opacity: .85; margin-bottom: 1.25em; }
+			@media (max-width: 736px) { a.pp-card { padding: 1.5em; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Zidane</strong> <span>Portofolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li><a href="learning.html">Continuous Learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<p class="bn-eyebrow">Data Analyst Portfolio</p>
+							<header class="major">
+								<h1>Turning Data into Insights, One Question at a Time.</h1>
+							</header>
+							<div class="content">
+								<p><strong>Hi, I&rsquo;m Muhammad Zidane.</strong><br />
+								An aspiring Data Analyst driven by curiosity and a passion for discovering what lies beneath the data. With a Mathematics background, I enjoy exploring patterns, solving problems, and turning data into insights that make a difference.</p>
+								<ul class="actions">
+									<li><a href="#projects" class="button next scrolly">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Projects (slider) -->
+							<section id="projects">
+								<div class="inner">
+									<header class="major">
+										<h2>Featured Projects</h2>
+									</header>
+
+									<div class="pp-slider" aria-label="Featured projects">
+										<div class="pp-track">
+
+											<a class="pp-card pp-warehouse" href="Warehouse%20Inventory.html">
+												<span class="pp-tag">SQL · Power BI</span>
+												<h3>Warehouse Inventory</h3>
+												<p>Finds where inventory is piling up and where stockouts are likely, then suggests stock transfers and smarter reorder levels.</p>
+												<span class="pp-cta">View project &rarr;</span>
+											</a>
+
+											<a class="pp-card pp-maven" href="Maven%20Fuzzy%20Store.html">
+												<span class="pp-tag">SQL · Power BI</span>
+												<h3>Maven Fuzzy Store</h3>
+												<p>Looks at sales, product profit, and marketing conversion for an online toy store to spot where revenue is being missed.</p>
+												<span class="pp-cta">View project &rarr;</span>
+											</a>
+											<!-- To add another slide, copy one of the cards above and change the link and text. -->
+
+										</div>
+										<div class="pp-controls">
+											<button type="button" class="pp-btn" id="pp-prev" aria-label="Previous project">&larr;</button>
+											<button type="button" class="pp-btn" id="pp-next" aria-label="Next project">&rarr;</button>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="aboutme.html" class="link">About Me</a></h3>
+										<p>A Mathematics graduate from Universitas Gadjah Mada focused on data analytics, turning complex data into actionable insights</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Skills.html" class="link">Skills</a></h3>
+										<p>I use data analytics and mathematical thinking to uncover patterns, solve problems, and turn complex data into clear, actionable insights that support better decision-making.</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="project.html" class="link">Project</a></h3>
+										<p>Personal projects that help me strengthen my analytical skills, explore data analytics tools, and turn data into actionable insights while continuously learning and growing.</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="self learning.html" class="link">Continuous Learning</a></h3>
+										<p>A data enthusiast committed to continuous learning, exploring new techniques, and turning data into meaningful insights.</p>
+									</header>
+								</article>
+							</section>
+
+
+					</div>
+
+				<!-- Contact: personal info + social links -->
+					<section id="contact">
+						<div class="inner">
+							<section class="pf-card">
+								<h3>Muhammad Zidane</h3>
+								<p class="pf-role">Aspiring Data Analyst | Mathematics Graduate</p>
+								<p>Hi! I'm passionate about exploring data, uncovering meaningful insights, and turning complex information into clear visualizations that support better decisions. I'm always eager to learn, take on new challenges, and grow through hands-on experiences. I'd love to connect, exchange ideas, and explore opportunities to collaborate!</p>
+								<ul class="icons">
+									<!-- TODO: replace each # (and the email) with your real profile links -->
+									<li><a href="mailto:mzidane1954@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.instagram.com/zi.zidane_" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/zidane1954" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://wa.me/+6289648598174" target="_blank" rel="noopener" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<!-- TODO: replace with your real email -->
+										<a href="mailto:mzidane1954@gmail.com"> mzidane1954@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-linkedin-in"></span>
+										<h3>LinkedIn</h3>
+										<!-- TODO: replace with your LinkedIn URL -->
+										<a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener">muhammadzidane1954</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<!-- TODO: replace with your real number -->
+										<a href="https://wa.me/+6289648598174">+62 896-4859-8174</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Muhammad Zidane</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<script>
+			(function () {
+				var track = document.querySelector('.pp-track');
+				if (!track) return;
+				var controls = document.querySelector('.pp-controls');
+				var prev = document.getElementById('pp-prev');
+				var next = document.getElementById('pp-next');
+				function step() {
+					var card = track.querySelector('.pp-card');
+					var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+					return card.offsetWidth + gap;
+				}
+				function update() {
+					var overflow = track.scrollWidth > track.clientWidth + 1;
+					controls.style.display = overflow ? 'flex' : 'none';
+					prev.disabled = track.scrollLeft <= 1;
+					next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+				}
+				prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
+				next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
+				track.addEventListener('scroll', function () { window.requestAnimationFrame(update); });
+				window.addEventListener('resize', update);
+				window.addEventListener('load', update);
+				update();
+			})();
+		</script>
+
+	</body>
+</html>

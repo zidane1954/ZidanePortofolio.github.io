@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Maven Fuzzy Store - Zidane Portofolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Sales, Product &amp; Marketing Performance Dashboard for Maven Fuzzy Factory: a MySQL and Power BI e-commerce analytics project." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.wi-subtitle { font-size: 1.25em; font-weight: 600; margin-bottom: 1.5em; }
+			.wi-section { margin-top: 3.5em; }
+			.wi-summary { margin-top: 1.5em; }
+			.wi-section h3 { margin-top: 2em; }
+			.wi-section h4 { margin-top: 1.5em; }
+			.wi-section > p, .wi-section li { line-height: 1.75; }
+			p.formula { background: rgba(128,128,128,0.10); border-left: 4px solid #5e42a6; padding: 0.8em 1.2em; font-weight: 600; overflow-x: auto; }
+			p.formula.code { font-weight: 400; }
+			.wi-toc { background: rgba(128,128,128,0.08); padding: 1.5em 2em; margin: 2em 0; }
+			.wi-toc h3 { margin-top: 0; }
+			.wi-toc ol { margin-bottom: 0; }
+			blockquote { margin: 1.5em 0; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Zidane</strong> <span>Portofolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li><a href="learning.html">Continuous Learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1>Sales, Product &amp; Marketing Performance Dashboard: Maven Fuzzy Factory</h1>
+								</header>
+								<p class="wi-subtitle">E-commerce analytics with MySQL and Power BI, March 2012 to March 2015</p>
+								<span class="image main"><img src="images/project/Dashboard Sales Marketing.png" alt="" /></span>
+								<span class="image main"><img src="images/project/Dashboard Sales Preview.png" alt="" /></span>
+								<section id="summary" class="wi-section wi-summary"><p>I worked on an e-commerce analytics project for Maven Fuzzy Factory, an online store that sells plush toys. The goal was to understand sales performance, product profitability, and marketing effectiveness using three years of data, from March 2012 to March 2015.</p>
+<p>Over that period, the store recorded 472,871 website sessions, 32,313 orders, and about US$1.94 million in revenue, with a gross profit margin of 62.7%. I used MySQL to process and analyze the data, then built two interactive Power BI dashboards: <strong>Sales &amp; Product Performance</strong> and <strong>Marketing &amp; Website Performance</strong>.</p>
+<p>The analysis surfaced several important business opportunities, from profit dependence on a single product to a conversion gap between desktop and mobile users. I also identified the stage of the customer journey where the most visitors leave the website before completing a purchase.</p></section>
+								<nav class="wi-toc"><h3>Contents</h3><ol><li><a href="#background-business-problem">Background &amp; Business Problem</a></li><li><a href="#project-objectives-analytical-questions">Project Objectives &amp; Analytical Questions</a></li><li><a href="#data-overview-understanding">Data Overview &amp; Understanding</a></li><li><a href="#methodology-tools">Methodology &amp; Tools</a></li><li><a href="#data-cleaning-preparation">Data Cleaning &amp; Preparation</a></li><li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li><li><a href="#insights-key-findings">Insights &amp; Key Findings</a></li><li><a href="#recommendations-impact">Recommendations &amp; Impact</a></li><li><a href="#dashboard">Dashboard</a></li></ol></nav>
+								<section id="background-business-problem" class="wi-section"><h2>Background & Business Problem</h2><p>Maven Fuzzy Factory saw significant traffic growth, from 1,879 sessions per month in March 2012 to nearly 30,000 sessions in December 2014. As it grew, the company also expanded its product range, from a single starting product, Mr. Fuzzy, to four products with different sales characteristics.</p>
+<p>This growth raised one main question for me: <strong>have the increase in traffic and the addition of new products translated into optimal sales and marketing performance?</strong></p>
+<p>To answer it, I identified several areas to analyze. On the sales side, I wanted to know which products contribute the most profit and which ones have refund problems. On the marketing side, I wanted to evaluate how well each channel and visitor segment turns traffic into conversions. I also wanted to understand which stage of the customer journey loses the most visitors, and when website traffic peaks.</p>
+<p>This matters because a high number of visitors doesn't always mean successful sales. According to the analysis, only about 6.83% of website sessions end in a purchase. With this much traffic, even a relatively small improvement in conversion can have a meaningful impact on orders and revenue.</p>
+<p>Based on these questions, I built dashboards that bring together sales indicators, product profitability, visitor behavior, and marketing performance, so business patterns are easier to understand and can support data-driven decisions.</p></section><section id="project-objectives-analytical-questions" class="wi-section"><h2>Project Objectives & Analytical Questions</h2><p>After identifying the challenges Maven Fuzzy Factory faces, I wanted to dig deeper into the factors that influence business performance, from each product's contribution to profit to how effectively marketing drives purchases. I didn't want to look only at overall sales figures. I wanted to understand the patterns behind the numbers so I could find more specific opportunities for improvement.</p>
+<p>To do that, I set five main questions to guide the analysis.</p>
+<ul>
+<li>First, which products contribute the most profit, and which ones have the highest refund rates?</li>
+<li>Second, which marketing channels are the most effective traffic sources for generating purchases?</li>
+<li>Third, where in the journey from landing page to checkout do the most visitors leave the website?</li>
+<li>Fourth, what do traffic and sales patterns look like by hour, day, and month, and when is activity highest?</li>
+<li>Finally, how likely are customers to buy again and to buy more than one item?</li>
+</ul>
+<p>Through these five questions, I aimed to build a more complete picture of sales performance, marketing effectiveness, and customer experience. I then presented the results through two interactive Power BI dashboards, so key information is easier to understand, business patterns can be explored through different filters, and improvement opportunities can be identified as a basis for data-driven decisions.</p></section><section id="data-overview-understanding" class="wi-section"><h2>Data Overview & Understanding</h2><p>To answer the analytical questions I had set, the next step was to understand the available data and decide what information could be used to evaluate Maven Fuzzy Factory's business performance. I used the public Maven Fuzzy Factory dataset from <a target="_blank" rel="noopener" href="https://mavenanalytics.io/data-playground/toy-store-e-commerce-database">Maven Analytics</a>, which covers March 19, 2012 to March 19, 2015, along with its <em>data dictionary</em> as a reference for the table structure and the definition of each variable.</p>
+<p>The dataset consists of six CSV tables that complement each other. The <code>website_sessions</code> table holds 472,871 rows of visitor session data, while <code>website_pageviews</code> records 1,188,124 page view events. To analyze transactions, I used the <code>orders</code> table with 32,313 rows and <code>order_items</code> with 40,025 rows. Refund information is in the <code>order_item_refunds</code> table with 1,731 rows, and the <code>products</code> table contains the four products offered during the observation period.</p>
+<p>I then identified the variables relevant to each part of the analysis. To understand traffic sources and marketing effectiveness, I used campaign and UTM content information, device type, repeat visit status, and <code>http_referer</code> from the website sessions table. To trace the visitor journey, I used the URLs of the pages visited, from the landing page and product pages to the cart, shipping, billing, and order confirmation pages. For sales and profitability, I used price, <em>cost of goods sold</em> (COGS), item status, the number of items per order, and refund data.</p>
+<p>Beyond the variables already in the data, I also prepared several derived variables to support the analysis. These include profit (calculated as price minus COGS), visit sequence, total visits per user, a classification of new versus returning customers, and <em>conversion funnel</em> stages. These variables help turn raw data into information that is more relevant for evaluating product profitability, customer behavior, and the effectiveness of the visitor journey toward a purchase.</p>
+<p>Although the dataset provides enough information to answer most of the analytical questions, there are a few limitations to keep in mind. The dataset doesn't include advertising costs, so <em>Return on Ad Spend</em> (ROAS) can't be calculated directly. Visitor demographics aren't available either, so the analysis can't describe customers by age, gender, or other demographic background. In addition, the 2015 data only runs through March 19, so year-over-year comparisons need to take the difference in period coverage into account.</p>
+<p>By understanding the structure, characteristics, and limitations of the data from the start, I could choose a suitable processing approach and make sure the analysis stays within the limits of what the dataset actually supports.</p></section><section id="methodology-tools" class="wi-section"><h2>Methodology & Tools</h2><p>After understanding the structure and characteristics of the dataset, I moved on to build a workflow that connects raw data to information that is relevant for business decisions. I used MySQL 8.0 to import, check, and analyze the data, then Power BI to prepare the data I needed, visualize the results, and present the findings as interactive dashboards.</p>
+<h3>Data Preparation &amp; Exploratory Data Analysis with MySQL</h3>
+<p>I started by importing the six CSV files into MySQL using <code>LOAD DATA INFILE</code>, defining the table structure, <em>primary keys</em>, and appropriate data types along the way. Once the data was in place, I ran data quality checks, looking for duplicates and missing values to understand the condition of the data before going further.</p>
+<p>Next, I used SQL to run <em>exploratory data analysis</em> (EDA) and dig into patterns related to sales, product profitability, customer behavior, and marketing effectiveness. In this process I used <code>JOIN</code> to combine information from several tables, Common Table Expressions (CTEs) to structure queries more clearly, <em>window functions</em> for calculations based on ordering or groups of data, and <code>CASE WHEN</code> to build classifications based on specific conditions.</p>
+<p>This stage set the groundwork for understanding each product's contribution, identifying purchase and refund patterns, evaluating traffic sources, and tracing the visitor journey from the first page to a purchase.</p>
+<h3>Data Transformation &amp; Dashboard Development with Power BI</h3>
+<p>After the initial analysis in SQL, I moved on to processing and visualizing the data in Power BI. At this stage, I used Power Query to handle empty UTM values in the session data by filling them in from the user's first visit, so traffic source attribution could be analyzed more consistently.</p>
+<p>I then built two connected dashboard pages: <strong>Sales &amp; Product Performance</strong> and <strong>Marketing &amp; Website Performance</strong>. The first dashboard focuses on sales performance, product profitability, purchase behavior, and refunds. The second focuses on marketing conversion, performance by device, the visitor journey through the <em>conversion funnel</em>, and traffic patterns over time.</p>
+<p>To support data exploration, I used DAX for metric calculations and built slicers for year and product name. I also added navigation between the Sales and Marketing pages so users can move from sales analysis to marketing analysis more easily. With this approach, the dashboard doesn't just show a performance summary. It also lets users explore the data by the period and product they want to analyze.</p>
+<h3>KPI Definition &amp; Analytical Approach</h3>
+<p>To give every finding a clear basis for measurement, I defined the KPIs according to the goals of the analysis. Conversion rate is the number of sessions that result in an order divided by total sessions, while <em>revenue per session</em> is total revenue divided by total sessions. I also used the average <code>price_usd</code> per order as the average order value, and calculated the returning visitor rate as the proportion of sessions with <code>is_repeat_session = 1</code>.</p>
+<p>To evaluate product returns, I calculated the <em>refund rate</em> as the number of refunded items divided by the number of items sold. Customers who <em>repurchase</em> are defined as buyers with more than one order. For the <em>conversion funnel</em> analysis, I counted the unique sessions that reached each page, from the landing page through to the order confirmation page, to see how visitor reach changes along the purchase journey. With these definitions, the session count at each stage represents the sessions that reached that page, not the sessions that stopped exactly on it.</p>
+<p>Overall, my methodology follows the flow <strong>CSV → MySQL → Power BI → Insights &amp; Recommendations</strong>. MySQL helped me prepare and analyze the data in a structured way, while Power BI helped me turn the results into visualizations that are easier to understand. By combining the two, I connected transaction and visitor behavior data to the business questions I had set, so the final results can be used to spot improvement opportunities in sales, marketing, and customer experience.</p></section><section id="data-cleaning-preparation" class="wi-section"><h2>Data Cleaning & Preparation</h2><p>Before moving on to analysis and visualization, I did some <em>data cleaning</em> and <em>preparation</em> to make sure the data was consistent and reliable. At this stage, I didn't just check data quality. I also looked for inconsistencies that could affect KPI calculations and the interpretation of results.</p>
+<h3>Data Quality Checks</h3>
+<p>I started by checking for duplicates using <code>ROW_NUMBER()</code> based on each table's key, and by identifying missing values with <code>IS NULL</code> across all relevant columns. The results showed that the <code>orders</code>, <code>order_items</code>, <code>order_item_refunds</code>, <code>products</code>, and <code>website_pageviews</code> tables had no duplicates or missing values.</p>
+<p>To make sure the tables were consistent with each other, I also verified the transaction data by comparing price, COGS, and item counts in the <code>orders</code> and <code>order_items</code> tables. They matched completely. I also confirmed that no item was recorded as sold before its product launch date, no refund occurred before the purchase, and no refund amount exceeded the purchase price. These checks gave me enough confidence that the transaction and refund data were consistent enough to use in the analysis.</p>
+<h3>Handling Missing UTM Values</h3>
+<p>The main challenge I found was in the <code>utm_source</code>, <code>utm_campaign</code>, <code>utm_content</code>, and <code>http_referer</code> columns of the <code>website_sessions</code> table. In the early stage, I looked into the pattern of empty values to understand whether the problem was random or related to the order of a user's visits. I found that empty UTM values appeared on both first visits and later visits from the same user. This became the basis for handling the data differently depending on visit order, because each situation has different implications for identifying traffic sources.</p>
+<p>Before making any changes, I copied the <code>website_sessions</code> table into <code>website_sessions_bersih</code> as a safeguard, so the original data would stay available for checking or recovery. In that copy, I converted the text <code>'NULL'</code> into real <code>NULL</code> values so missing values could be recognized and handled properly. After that, I decided to delete first-visit rows that had neither UTM information nor an <code>http_referer</code>, because the visitor's source on those sessions couldn't be identified from the available information. In this analysis, I treated that data as insufficient for determining traffic sources, while the original table stays in place as a backup.</p>
+<h3>UTM Transformation in Power Query</h3>
+<p>For second, third, and later visits with empty UTM values, I used the <strong>Fill Down</strong> feature in Power Query in Power BI. This approach is based on the pattern I found: traffic source information from a user's first visit can be used as a reference to fill in their later visits. That way, empty UTM values on repeat visits can be filled in using information from the previous visit, in the right data order.</p>
+<p>This process helped me keep traffic source information for repeat visits without having to delete every session with empty UTM values. It also reminded me that handling missing data should take context into account, rather than just deleting every row with an empty value. By handling first visits and repeat visits separately, I could apply a different approach to each, based on the information available.</p>
+<p>Through this process, I learned that <em>data cleaning</em> isn't just about fixing formats or removing empty values. It's also about understanding the patterns in the data before deciding what to do. Keeping a backup, checking visit order, and using Fill Down show how important it is to protect data integrity while making sure the information used in the analysis has a clear basis.</p>
+<h3>Preparing Data for Analysis</h3>
+<p>Once the checks and transformations were done, I prepared additional variables to support the analysis of visitor behavior and business performance. I marked each user's visit sequence and calculated total visits per user to tell new customers apart from returning ones. I also prepared the product, refund, and <em>conversion funnel</em> stage data so it could be used to evaluate product profitability, returns, and the visitor journey from landing page to purchase.</p>
+<p>Throughout, I aimed to keep the data intact while making sure it fit the needs of the analysis. Cross-table consistency checks, careful handling of UTM values, and the preparation of analytical variables became the foundation for the KPI calculations and for building the Sales and Marketing dashboards in Power BI.</p></section><section id="exploratory-data-analysis-eda" class="wi-section"><h2>Exploratory Data Analysis (EDA)</h2><p>After finishing data cleaning and preparation, I started the <em>Exploratory Data Analysis</em> (EDA) to understand sales patterns, product contributions, customer behavior, and the effectiveness of marketing at Maven Fuzzy Factory. At this stage, I didn't just look at overall business performance. I also compared different segments to find factors that could influence sales results and the visitor experience.</p>
+<h3>Sales &amp; Product Performance</h3>
+<p>I began on the sales side, looking at how revenue, profit, and each product's contribution developed. Over the observation period, Maven Fuzzy Factory generated total revenue of <strong>US$1,938,510</strong> and profit of <strong>US$1,216,140</strong>, with an average order value of <strong>US$59.99</strong> (or US$61.16 per buyer). In terms of growth, revenue rose from about US$129 thousand in 2012 to US$393 thousand in 2013, then reached US$1.08 million in 2014. I also found a seasonal pattern, with the highest sales activity in November and December.</p>
+<p>Next, I compared the sales and profit contributions of the four products. The Original Mr. Fuzzy had the largest sales volume at 24,226 units, followed by The Forever Love Bear with 5,796 units, The Hudson River Mini Bear with 5,018 units, and The Birthday Sugar Panda with 4,985 units. In terms of profit, though, there's a clear dependence on one product: Mr. Fuzzy contributes <strong>60.8% of total profit</strong>, while Love Bear contributes 17.9%, Sugar Panda 12.9%, and Hudson Mini Bear 8.5%. Interestingly, even though their profit contribution is smaller, Sugar Panda and Hudson Mini Bear have margins of 68.5% and 68.4%, higher than Mr. Fuzzy's 61.0%.</p>
+<p>I then looked at refunds to see whether sales quality differs between products. Sugar Panda has the highest refund rate at 6.04%, followed by Mr. Fuzzy at 5.11%, Love Bear at 2.23%, and Hudson Mini Bear at 1.28%. Overall, the refund value reached US$85,339, or about 4.4% of revenue, with a median refund time of around nine days after purchase. This suggests that products with strong sales contributions and good margins still need to be evaluated for returns.</p>
+<p>To understand how customers buy, I also analyzed the composition of items in each order. 76.1% of orders contain just one item, while the other 23.9% contain two. Hudson River Mini Bear is the most frequent add-on, appearing in 4,437 of the 7,712 orders with two items. This suggests that Hudson Mini Bear plays a fairly strong role as an <em>add-on</em> product rather than as a main product in the shopping cart.</p>
+<p>Beyond purchase patterns within a single transaction, I also looked at repurchase behavior. Of 31,696 buyers, only 591 (about 1.86%) bought again. A total of 565 customers made two purchases, and 26 made three. This shows that most buyers made only one transaction during the observation period, which leaves room to evaluate retention strategies and encourage repeat purchases.</p>
+<h3>Website &amp; Marketing Performance</h3>
+<p>After understanding sales and product performance, I turned to website activity to see how visitors interact with the online store and how well marketing activity drives purchases. I started by analyzing the <em>conversion funnel</em> based on the number of unique sessions that reached each page, from the landing page through to a successfully placed order.</p>
+<p>The results show that 100% of sessions start at the landing page, then 55.2% reach the product page, 44.5% reach the product detail page, 20.1% reach the cart, 13.6% reach the shipping page, 11.0% reach the billing page, and finally only 6.83% result in an order. The biggest drop is between the product detail page and the cart, since only 45.2% of sessions that reach the product detail page continue to the cart. I also found drops from the landing page to the product page and from billing to the order. This pattern helps me pinpoint the stages of the visitor journey that need more attention, especially when visitors start considering a product and move forward with the purchase.</p>
+<p>Next, I compared website performance by device type. Out of about 473 thousand sessions, desktop accounts for about 327 thousand sessions with a conversion rate of <strong>8.50%</strong>, while mobile records about 146 thousand sessions with a conversion rate of only <strong>3.09%</strong>. This shows that desktop visitors are far more likely to complete a purchase than mobile visitors, which makes the mobile user experience a worthwhile area to look into further.</p>
+<p>I also analyzed the effectiveness of marketing channels based on traffic volume and conversion rate. Google non-brand search (<code>gsearch non-brand</code>) is the largest traffic source with 282,706 sessions, about 59.8% of total traffic, and a conversion rate of 6.66%. Brand search channels convert better, at 8.86% for <code>bsearch brand</code> and 7.53% for <code>gsearch brand</code>. On the other hand, Socialbook pilot produced a conversion rate of just 1.08%. This comparison shows that the amount of traffic a channel generates doesn't always line up with its ability to generate purchases.</p>
+<p>To understand visitor activity patterns, I analyzed the distribution of traffic over time. Website activity is highest around 10:00 to 16:00, and the quietest period is around 03:00. By day, traffic on Saturday and Sunday is only about half of weekday traffic. The conversion rate on weekends is fairly similar, though, ranging from 6.6% to 7.0%. This suggests that even though visitor volume differs, visitors' tendency to buy doesn't vary much by day.</p>
+<p>Finally, I looked at the behavior of visitors who come back to the website. Of 394,318 unique visitors, 51,270 (about 13.0%) visited more than once. By session, repeat visits account for about 16.6% of total traffic and have a conversion rate of <strong>7.83%</strong>, higher than the <strong>6.64%</strong> for new sessions. This suggests that sessions from returning visitors tend to convert better, which makes repeat visit behavior a relevant factor for understanding how to grow sales.</p>
+<h3>Summary of EDA</h3>
+<p>This analysis gave me a picture of how Maven Fuzzy Factory's growth isn't driven only by higher traffic and sales, but also by each product's contribution, purchase behavior, the effectiveness of marketing channels, and the visitor experience on the website. The most interesting patterns were the profit dependence on Mr. Fuzzy, the high refund rate on Sugar Panda, the low repurchase rate, the conversion gap between desktop and mobile, and the large drop in visitors before they reach the shopping cart. These findings became the basis for the business insights and more focused recommendations in the next stage.</p></section><section id="insights-key-findings" class="wi-section"><h2>Insights & Key Findings</h2><h3>Sales &amp; Product Insights</h3>
+<h4>1. Profit dependence on a single product is a business risk.</h4>
+<p>On the product side, I found that The Original Mr. Fuzzy is still the main contributor to the business, accounting for about 60.8% of total profit. In other words, most of the company's profit depends on how one product performs. This could become a risk if demand drops, quality problems come up, or Mr. Fuzzy runs into stock availability issues.</p>
+<p>On the other hand, the products launched later, such as Birthday Sugar Panda and Hudson River Mini Bear, actually have higher profit margins, around 68.5% and 68.4%, compared with Mr. Fuzzy's 61.0%. This suggests the company has an opportunity to grow the contribution of other products so profit isn't so dependent on one item. It matters because diversifying where sales come from can help keep profit stable, and it gives a basis for deciding product development priorities.</p>
+<h4>2. Refunds are concentrated in two products.</h4>
+<p>The refund analysis shows that Birthday Sugar Panda has the highest refund rate at 6.04%, followed by The Original Mr. Fuzzy at 5.11%. Both are higher than The Forever Love Bear at 2.23% and Hudson River Mini Bear at 1.28%. This shows that product returns aren't spread evenly. They're concentrated in Panda and Mr. Fuzzy.</p>
+<p>High refunds can reduce the revenue the company should be receiving, and they may point to product or order fulfillment issues that need to be looked at. The company should therefore pay closer attention to these two products by tracing the reasons for refunds, product quality, how well the description matches what customers receive, and the shipping process. This analysis matters so the company doesn't focus only on products with high sales and profit, but also watches for losses that appear after the transaction takes place.</p>
+<h4>3. Hudson Mini Bear plays the role of an add-on product.</h4>
+<p>Interestingly, Hudson River Mini Bear shows a different sales pattern from the other products. It appears as the primary product in only 581 orders, but shows up as an additional item in 4,437 orders that bought more than one product. This suggests that Hudson is more often bought as a complement than as a product customers look for on its own.</p>
+<p>This pattern gives a sense of how customers combine products when they shop. For the company, it's an opportunity to apply bundling, related product recommendations, or extra offers as customers complete a purchase. These strategies could increase the number of items per order and the transaction value without always depending on adding new customers. Understanding each product's role in the shopping cart is therefore important for choosing the right sales strategy.</p>
+<h4>4. Customer retention is still a challenge for the business.</h4>
+<p>On customer behavior, I found that only 591 out of 31,696 buyers, or about 1.86%, bought again. Most customers made just one purchase, so the company still faces the challenge of keeping customers after their first transaction.</p>
+<p>The data also shows that sessions from visitors who have been to the store before have a higher conversion rate at 7.83%, compared with 6.64% for new visitors. This suggests that visitors who already know the store are more likely to buy. That opens up opportunities to improve retention through loyalty programs, special promotions for existing customers, product recommendations, and post-purchase communication. This insight matters because keeping customers who have already bought is one way to drive repeat transactions, strengthen customer relationships, and reduce dependence on bringing in new visitors.</p>
+<h3>Marketing &amp; Website Insights</h3>
+<h4>5. Mobile has big potential for conversion improvement.</h4>
+<p>Mobile accounts for about 31% of total website sessions, yet its conversion rate is only 3.09%. That's quite far from desktop at 8.50%. In other words, even though mobile brings in a sizable share of traffic, not many of those visitors complete a purchase.</p>
+<p>This gap points to an opportunity to evaluate the mobile shopping experience, such as page speed, product display, ease of navigation, button size, and the checkout process. If those barriers can be identified and fixed, the company could increase the number of transactions without significantly increasing the number of sessions. This finding matters because a small improvement in mobile conversion can make a real contribution when applied to a large volume of visitors.</p>
+<h4>6. The biggest barrier is when visitors move from the product detail page to the cart.</h4>
+<p>The website funnel analysis shows that one of the largest drop-offs happens between the product detail page and the shopping cart. Of all the sessions that reach the product detail page, only about 45.2% continue to the cart page. Yet visitors who reach the cart are much more likely to finish the transaction, with about 34% of sessions at that stage going on to place an order.</p>
+<p>This pattern suggests that the main challenge isn't only getting visitors to the website, but also getting them to make a decision after seeing the product details. Some aspects to evaluate include product information, photos, price, customer reviews, stock availability, and the clarity of the buy button. This finding matters because improving this stage could make the whole funnel more effective. In other words, the company could get more transactions from the traffic it already has, without always having to raise the marketing budget.</p>
+<h4>7. Brand search converts best, while Socialbook pilot performs the worst.</h4>
+<p>By marketing channel, brand keyword search through Bing (bsearch brand) has the highest conversion rate at 8.86%. In contrast, the Socialbook pilot channel converts at only 1.08%. This shows that visitors who arrive through brand search are much more likely to buy than visitors from Socialbook pilot.</p>
+<p>One possible explanation is that people searching for the brand name already have stronger awareness of, or interest in, the product. Visitors from social channels, meanwhile, may still be getting to know the product and may not have the same intent to buy. This finding can help prioritize marketing channels, for example by maintaining the performance of brand search and re-evaluating Socialbook's content strategy and audience targeting.</p>
+<p>That said, conversion rate alone isn't enough to determine each channel's profitability, since marketing cost data isn't available. This insight is therefore useful as a basis for evaluating how effectively a channel generates transactions, not as a direct measure of return on marketing spend.</p>
+<h4>8. Website traffic has fairly clear time-of-day and seasonal patterns.</h4>
+<p>The visit-time analysis shows that visitor activity is concentrated on weekdays, especially between 10:00 and 16:00. Weekend visits are relatively lower, at about half of weekday traffic. Over the course of the year, traffic and sales also rise from November through December. This suggests that customer activity isn't spread evenly, and that there are periods with noticeably higher intensity.</p>
+<p>This information can be used to schedule marketing campaigns, time promotions, and prepare stock ahead of high-demand periods. The company could also consider adjusting operating schedules and customer support coverage for the hours with the highest traffic. This insight matters so marketing and inventory decisions are based on customer activity patterns, not just estimates or operating habits.</p></section><section id="recommendations-impact" class="wi-section"><h2>Recommendations & Impact</h2><p>Based on the Sales, Product, Marketing, and Website analysis, I put together several recommendations that stakeholders can consider to improve Maven Fuzzy Factory's business performance. Each recommendation is aimed at the party responsible for the relevant decisions, so the findings from the dashboard can serve as a basis for evaluation and strategic planning.</p>
+<h3>1. Management &amp; Decision Makers: Reduce Dependence on a Single Product</h3>
+<p>Management should consider a diversification strategy so profit contribution doesn't depend so heavily on The Original Mr. Fuzzy, which accounts for 60.8% of total profit. Other products, such as Birthday Sugar Panda and Hudson River Mini Bear, have higher profit margins and could be developed as additional sources of profit.</p>
+<p>Management can evaluate product development strategies, set investment priorities, and keep stock balanced across products. Simulations of conversion and sales improvements can also be used when setting business targets. This step matters to reduce the risk of depending on one product and to keep the company's growth sustainable.</p>
+<h3>2. Marketing Team: Optimize Budget Allocation and Campaign Strategy</h3>
+<p>The marketing team is advised to evaluate each channel based on its contribution to conversions, not just the number of sessions it generates. Brand search, with the highest conversion at 8.86%, can be maintained and optimized, while Socialbook pilot's 1.08% conversion should be reviewed through an evaluation of its target audience, content, and campaign strategy.</p>
+<p>The team can also use traffic patterns to time campaigns, especially on weekdays from 10:00 to 16:00 and during November–December. This recommendation should be paired with measurement of marketing costs, so the company can compare what it spends against the transactions and revenue it generates. That way, budget can be directed toward the channels and periods that perform better.</p>
+<h3>3. Product &amp; Quality Control Team: Evaluate Product Quality and Refund Causes</h3>
+<p>The product and quality control team should give special attention to Birthday Sugar Panda and The Original Mr. Fuzzy, which have the highest refund rates at 6.04% and 5.11%, respectively. The evaluation can involve identifying the reasons for returns, checking product quality consistency, and making sure product descriptions match what customers receive.</p>
+<p>Since refunds are typically recorded around nine days after purchase, the company can also use that window to monitor complaints and spot problems once orders have been received. Improvements here could reduce refund value while raising customer satisfaction. That matters because high sales for a product don't necessarily reflect optimal performance if they come with a high return rate.</p>
+<h3>4. Website &amp; Development Team: Improve User Experience and the Purchase Funnel</h3>
+<p>The website and development team should prioritize evaluating the user experience on mobile devices, as well as the purchase process from the product detail page to the cart. Mobile's conversion rate of only 3.09%, compared with 8.50% on desktop, shows room to make shopping easier on that device.</p>
+<p>The low rate at which visitors move from the product detail page to the cart can also be a starting point for evaluating how information, photos, prices, reviews, and the buy button are presented. The team can test design or feature changes step by step to find out which improvements work best. This recommendation matters because a better user experience can reduce barriers during the purchase process and lift conversion from the traffic that's already there.</p>
+<h3>5. Sales &amp; Merchandising Team: Increase Order Value Through Cross-Selling</h3>
+<p>The sales and merchandising team can take advantage of the fact that Hudson River Mini Bear shows up more often as an add-on item than as a main product. Strategies could include offering bundles, showing complementary product recommendations on detail pages, or presenting an extra offer when customers add a main product to their cart.</p>
+<p>This approach can help increase the number of items per order and the average order value. The team can also look at which products are most often bought together to decide which bundle combinations make sense. This recommendation matters because the company doesn't only need more transactions. It can also get more value out of every transaction it wins.</p>
+<h3>6. Customer Relationship Management (CRM) Team: Improve Retention and Repeat Purchases</h3>
+<p>With a repurchase rate of only 1.86%, the company needs a strategy to maintain relationships with customers after their first transaction. The CRM team can consider post-purchase emails, a loyalty program, special offers for existing customers, and product recommendations based on purchase history. These strategies can be aimed at bringing customers back to the website for their next purchase.</p>
+<p>The company can also use different communication approaches for new customers and for those who have bought before. This recommendation matters because visitors who have been to the store before convert at a higher rate than new visitors. By building lasting customer relationships, the company has a chance to increase repeat purchases and customer lifetime value.</p>
+<h3>7. Operations &amp; Supply Chain Team: Align Inventory with Demand Patterns</h3>
+<p>The operations and supply chain team should use traffic and sales patterns as one basis for inventory planning. The rise in activity in November–December means the company needs to prepare product availability before that period begins. Planning can also account for demand differences between products, so stock isn't concentrated only on the products with the highest historical sales.</p>
+<p>In addition, the operations and marketing teams need to coordinate so promotional campaigns don't generate demand that exceeds available stock. This recommendation matters to reduce the risk of stockouts when demand rises, while also avoiding excess inventory during lower-demand periods.</p>
+<h3>Closing Thoughts</h3>
+<p>Overall, these recommendations show that data analysis can support many business functions, from management, marketing, and website development to product management and operations. The dashboard isn't only a tool for monitoring performance. It's also a basis for identifying problems, setting priorities, and evaluating business strategy in a more measurable way.</p></section><section id="dashboard" class="wi-section"><h2>Dashboard</h2><p>The dashboard has two pages, with <strong>Sales</strong> and <strong>Marketing</strong> navigation buttons, <strong>Year</strong> and <strong>Product Name</strong> slicers, four KPI cards at the top, and four insight cards at the bottom. The design uses a navy, honey, and cream palette, with consistent product colors across all charts, a bear logo, and KPI icons.</p>
+<h3>Sales &amp; Product Performance</h3>
+<p><img onerror="this.style.display='none'" alt="Dashboard Sales &amp; Product Performance" src="images/dashboard_sales.png" /></p>
+<ul>
+<li><strong>KPIs:</strong> Total Items Sold (40,025), Total Profit (US$1.216 million), Repurchase Customers (591), and Refund Rate (4.32%).</li>
+<li><strong>Charts:</strong><ul>
+<li>Total profit and total items sold by product.</li>
+<li>Monthly product sales trend.</li>
+<li>Items sold vs. items refunded by product.</li>
+<li>Customer status (new vs. repeat) and items-per-order ratio (1 item 76.13% vs. 2 items 23.87%).</li>
+</ul>
+</li>
+<li><strong>Insight cards:</strong> 60.8% of profit from Mr. Fuzzy, Panda refund rate of 6.04%, Hudson as an add-on item (4,437), and retention of 1.86%.</li>
+</ul>
+<h3>Marketing &amp; Website Performance</h3>
+<p><img onerror="this.style.display='none'" alt="Dashboard Marketing &amp; Website Performance" src="images/dashboard_marketing.png" /></p>
+<ul>
+<li><strong>KPIs:</strong> Conversion Rate, Revenue per Session, Average Order Value, and Returning Visitor Rate.</li>
+<li><strong>Charts:</strong><ul>
+<li>Marketing conversion rate by campaign content and by device type.</li>
+<li>Visitor funnel through to checkout (472.87 thousand sessions down to 32.31 thousand orders, 6.83%).</li>
+<li>Number of visitors by hour and by day.</li>
+<li>Monthly website visitor trend vs. product sales.</li>
+</ul>
+</li>
+<li><strong>Insight cards:</strong> mobile lagging behind (3.09% vs. 8.50%), leakage from the product detail page to the cart (45.2%), brand search as the most effective channel (8.86% vs. 1.08% for Socialbook pilot), and peak traffic from 10:00 to 16:00 on weekdays.</li>
+</ul>
+<!-- TODO: replace # with your public Power BI link or repository link --><ul class="actions"><li><a href="https://ugm365-my.sharepoint.com/:u:/g/personal/muhammadzidane2004_365_ugm_ac_id/IQAEmmb09JvaQYVPob1xahM2AYeJoTUXMfrhQmMLKfjd2A4?e=DX5rf5" class="button primary" target="_blank" rel="noopener">View Live Dashboard</a></li></ul></section>
+
+
+<section id="links-contact" class="wi-section">
+<h2>View the complete code on </h2>
+<!-- TODO: replace each # with your real links -->
+<ul class="actions">
+<li><a href="https://github.com/zidane1954/Project1-MavenFuzzyFactoryE-Commerce" class="button" target="_blank" rel="noopener">GitHub Repository</a></li>
+<li><a href="https://ugm365-my.sharepoint.com/:u:/g/personal/muhammadzidane2004_365_ugm_ac_id/IQAEmmb09JvaQYVPob1xahM2AYeJoTUXMfrhQmMLKfjd2A4?e=yfVeh3" class="button primary" target="_blank" rel="noopener" class="button" target="_blank" rel="noopener">Dashboard</a></li>
+</ul>
+</section>
+								
+							</div>
+						</section>
+
+					</div>
+
+				<!-- Contact: personal info + social links -->
+					<section id="contact">
+						<div class="inner">
+							<section class="pf-card">
+								<h3>Muhammad Zidane</h3>
+								<p class="pf-role">Aspiring Data Analyst | Mathematics Graduate</p>
+								<p>Hi! I'm passionate about exploring data, uncovering meaningful insights, and turning complex information into clear visualizations that support better decisions. I'm always eager to learn, take on new challenges, and grow through hands-on experiences. I'd love to connect, exchange ideas, and explore opportunities to collaborate!</p>
+								<ul class="icons">
+									<!-- TODO: replace each # (and the email) with your real profile links -->
+									<li><a href="mailto:mzidane1954@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.instagram.com/zi.zidane_" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/zidane1954" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://wa.me/+6289648598174" target="_blank" rel="noopener" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<!-- TODO: replace with your real email -->
+										<a href="mailto:mzidane1954@gmail.com"> mzidane1954@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-linkedin-in"></span>
+										<h3>LinkedIn</h3>
+										<!-- TODO: replace with your LinkedIn URL -->
+										<a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener">muhammadzidane1954</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<!-- TODO: replace with your real number -->
+										<a href="https://wa.me/+6289648598174">+62 896-4859-8174</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Muhammad Zidane</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
