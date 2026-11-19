@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Coffee Shop Sales Dashboard - Zidane Portofolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Coffee Shop Sales Performance Dashboard: an Excel and Looker Studio project analyzing 149,116 transactions across 3 stores." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.wi-subtitle { font-size: 1.25em; font-weight: 600; margin-bottom: 1.5em; }
+			.wi-section { margin-top: 3.5em; }
+			.wi-summary { margin-top: 1.5em; }
+			.wi-section h3 { margin-top: 2em; }
+			.wi-section h4 { margin-top: 1.5em; }
+			.wi-section > p, .wi-section li { line-height: 1.75; }
+			p.formula { background: rgba(128,128,128,0.10); border-left: 4px solid #5e42a6; padding: 0.8em 1.2em; font-weight: 600; overflow-x: auto; }
+			p.formula.code { font-weight: 400; }
+			.wi-toc { background: rgba(128,128,128,0.08); padding: 1.5em 2em; margin: 2em 0; }
+			.wi-toc h3 { margin-top: 0; }
+			.wi-toc ol { margin-bottom: 0; }
+			blockquote { margin: 1.5em 0; }
+			/* Contact area: explicit layout so it does not depend on the page structure above it */
+			#contact .inner { display: flex; flex-wrap: wrap; align-items: stretch; width: 100%; max-width: none; margin: 0; padding: 0; }
+			#contact .inner > .pf-card { flex: 0 0 calc(50% + 3.5em); box-sizing: border-box; display: flex; flex-direction: column; padding: 4em 3em 3em max(1.5em, calc(50vw - 22em)); }
+			#contact .inner > .split { flex: 1 1 18em; }
+			.pf-card h3 { margin-bottom: .1em; }
+			.pf-card .pf-role { font-weight: 600; opacity: .85; margin-bottom: 1.25em; }
+			.pf-card .icons { margin-top: auto; margin-bottom: 0; }
+			@media (max-width: 980px) { #contact .inner > .pf-card { flex: 1 1 100%; padding: 3em 1.5em; } #contact .inner > .split { flex: 1 1 100%; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Zidane</strong> <span>Portofolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li><a href="learning.html">Continuous Learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1>Coffee Shop Sales Performance Dashboard</h1>
+								</header>
+								<p class="wi-subtitle">From Business Problem to Data-Driven Insight</p>
+								<span class="image main"><img src="images/project/Dashboard Sales Coffeshio.png" alt="Coffee Shop Sales Performance Dashboard" onerror="this.closest('.image').style.display='none'" /></span>
+								<section id="summary" class="wi-section wi-summary"><p>I built a one-page dashboard to track sales for a coffee shop chain: <strong>149,116 transactions</strong>, <strong>3 stores</strong>, January–June 2023. It shows what to prepare, what to stock, and when to promote.</p>
+<p><strong>Tools:</strong> Excel, Looker Studio</p></section>
+								<nav class="wi-toc"><h3>Contents</h3><ol><li><a href="#background">Background &amp; Problem</a></li><li><a href="#objectives">Objectives &amp; Questions</a></li><li><a href="#data">Dataset</a></li><li><a href="#cleaning">Data Cleaning</a></li><li><a href="#findings">Key Findings</a></li><li><a href="#recommendations">Recommendations</a></li><li><a href="#dashboard">Dashboard</a></li><li><a href="#links-contact">Links</a></li></ol></nav>
+
+<section id="background" class="wi-section"><h2>Background &amp; Problem</h2>
+<p>The chain had no single view of sales across stores and time. Without it, management struggled to:</p>
+<ul>
+<li><strong>Production:</strong> match barista staffing to the morning rush (7–10 AM).</li>
+<li><strong>Inventory:</strong> stock the right products and categories.</li>
+<li><strong>Marketing:</strong> lift the $4.70 average spend, especially in slow afternoons.</li>
+</ul></section>
+
+<section id="objectives" class="wi-section"><h2>Objectives &amp; Questions</h2>
+<p>Build a one-page dashboard that answers four sales questions, clearly and without clutter.</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>#</th><th>Question</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>What are the top 5 products by quantity sold?</td></tr>
+<tr><td>2</td><td>Which day of the week has the most transactions?</td></tr>
+<tr><td>3</td><td>Which hour of the day has the highest sales?</td></tr>
+<tr><td>4</td><td>What are the top 5 categories by sales each month?</td></tr>
+</tbody></table></div></section>
+
+<section id="data" class="wi-section"><h2>Dataset</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Item</th><th style="text-align: right;">Value</th></tr></thead>
+<tbody>
+<tr><td>Transactions</td><td style="text-align: right;">149,116</td></tr>
+<tr><td>Period</td><td style="text-align: right;">181 days (Jan 1 – Jun 30, 2023)</td></tr>
+<tr><td>Store locations</td><td style="text-align: right;">3</td></tr>
+<tr><td>Product categories</td><td style="text-align: right;">9</td></tr>
+<tr><td>Columns</td><td style="text-align: right;">18</td></tr>
+</tbody></table></div>
+<p>Columns cover the transaction, store, product, price, and time (month, day, hour).</p></section>
+
+<section id="cleaning" class="wi-section"><h2>Data Cleaning</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Check</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Missing values &amp; duplicates</td><td>None found, no rows removed</td></tr>
+<tr><td>Price columns</td><td>Text like "$3.00" converted to numbers</td></tr>
+<tr><td>Product type</td><td>Capitalization standardized (29 types)</td></tr>
+<tr><td>Total bill check</td><td>qty × unit price: 0 mismatches</td></tr>
+</tbody></table></div>
+<p>Clean total revenue: <strong>$698,812.33</strong>.</p></section>
+
+<section id="findings" class="wi-section"><h2>Key Findings</h2>
+
+<h3>1. Sales more than doubled</h3>
+<ul>
+<li><strong>+119%</strong> from February to June.</li>
+<li><strong>+6%</strong> June vs May, so growth is slowing.</li>
+<li><strong>$698.8K</strong> total revenue in six months.</li>
+</ul>
+
+<h3>2. Coffee and Tea drive revenue</h3>
+<ul>
+<li>Coffee <strong>38.6%</strong> + Tea <strong>28.1%</strong> of revenue.</li>
+<li>Top 5 categories make up <strong>94.6%</strong>.</li>
+<li>Stores are evenly matched: <strong>32.9%–33.8%</strong> each.</li>
+</ul>
+
+<h3>3. Top products by quantity</h3>
+<div class="table-wrapper"><table>
+<thead><tr><th>Rank</th><th>Product</th><th style="text-align: right;">Units</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Brewed Chai Tea</td><td style="text-align: right;">26.25K</td></tr>
+<tr><td>2</td><td>Gourmet Brewed Coffee</td><td style="text-align: right;">25.97K</td></tr>
+<tr><td>3</td><td>Barista Espresso</td><td style="text-align: right;">24.94K</td></tr>
+<tr><td>4</td><td>Brewed Black Tea</td><td style="text-align: right;">17.46K</td></tr>
+<tr><td>5</td><td>Hot Chocolate</td><td style="text-align: right;">17.46K</td></tr>
+</tbody></table></div>
+<p>Most units ≠ most revenue: Barista Espresso earns the most (<strong>$91.4K</strong>) but ranks third in units.</p>
+
+<h3>4. Peak time</h3>
+<ul>
+<li><strong>Peak hour:</strong> 10 AM, with the morning rush as the busiest window.</li>
+<li><strong>Busiest day:</strong> Friday (21.7K transactions), but all weekdays are evenly busy.</li>
+</ul></section>
+
+<section id="recommendations" class="wi-section"><h2>Recommendations</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Insight</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Sales peak in the morning</td><td>Full barista coverage from 6:30 AM and finish prep before 7:00 AM. Add afternoon "Happy Hour" bundles (coffee + bakery, 1–4 PM).</td></tr>
+<tr><td>Chai Tea, Gourmet Coffee, and Espresso lead in volume</td><td>Raise safety stock for these drinks (especially Thursday–Friday). Bundle with bakery to lift average spend.</td></tr>
+<tr><td>June is the highest month, February the lowest</td><td>Scale up purchasing and seasonal campaigns before April–June. Use loyalty rewards or seasonal drinks in January–February.</td></tr>
+</tbody></table></div></section>
+
+<section id="dashboard" class="wi-section">
+<h2>Dashboard</h2>
+<span class="image main"><img src="images/project/Dashboard Sales Coffeshio.png" alt="Inventory &amp; Supply Chain Performance Dashboard" onerror="this.closest('.image').style.display='none'" /></span>
+
+<p>One page, four KPIs, four charts. Each chart answers one question.</p>
+<ul>
+<li><strong>KPIs:</strong> Total Revenue (698.8K), Total Orders (149.1K), Quantity Sold (214.5K), Average Spend ($4.70).</li>
+<li><strong>Filters:</strong> date range and store location update every chart.</li>
+<li><strong>Q1:</strong> Top 5 products: horizontal bar.</li>
+<li><strong>Q2:</strong> Busiest day: column chart.</li>
+<li><strong>Q3:</strong> Peak hour: line chart.</li>
+<li><strong>Q4:</strong> Top 5 categories per month: stacked column.</li>
+</ul>
+<!-- TODO: replace # with your Looker Studio link -->
+<ul class="actions"><li><a href="https://datastudio.google.com/reporting/cec5b43b-d956-405d-a94f-424097a3217e" class="button primary" target="_blank" rel="noopener">View Interactive Dashboard</a></li></ul>
+</section>
+
+<section id="links-contact" class="wi-section">
+<h2>View the complete project on </h2>
+<!-- TODO: replace each # with your real links -->
+<ul class="actions">
+<li><a href="#" class="button" target="_blank" rel="noopener">GitHub Repository</a></li>
+<li><a href="https://datastudio.google.com/reporting/cec5b43b-d956-405d-a94f-424097a3217e" class="button primary" target="_blank" rel="noopener">Dashboard</a></li>
+</ul>
+</section>
+							</div>
+						</section>
+					</div>
+
+
+
+
+				<!-- Contact: personal info + social links -->
+					<section id="contact">
+						<div class="inner">
+							<section class="pf-card">
+								<h3>Muhammad Zidane</h3>
+								<p class="pf-role">Aspiring Data Analyst | Mathematics Graduate</p>
+								<p>Hi! I'm passionate about exploring data, uncovering meaningful insights, and turning complex information into clear visualizations that support better decisions. I'm always eager to learn, take on new challenges, and grow through hands-on experiences. I'd love to connect, exchange ideas, and explore opportunities to collaborate!</p>
+								<ul class="icons">
+									<!-- TODO: replace each # (and the email) with your real profile links -->
+									<li><a href="mailto:mzidane1954@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.instagram.com/zi.zidane_" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/zidane1954" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://wa.me/+6289648598174" target="_blank" rel="noopener" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<!-- TODO: replace with your real email -->
+										<a href="mailto:mzidane1954@gmail.com"> mzidane1954@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-linkedin-in"></span>
+										<h3>LinkedIn</h3>
+										<!-- TODO: replace with your LinkedIn URL -->
+										<a href="https://linkedin.com/in/muhammadzidane1954" target="_blank" rel="noopener">muhammadzidane1954</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<!-- TODO: replace with your real number -->
+										<a href="https://wa.me/+6289648598174">+62 896-4859-8174</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Muhammad Zidane</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
